@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>میکا — قالب حرفه‌ای رزومه و پورتفولیو</title>
+
+  <!-- فونت گوگل: IBM Plex Mono برای برچسب‌های لاتین، Vazirmatn برای متن فارسی -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- استایل‌شیت اصلی سایت -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- صفحه‌ی پیش‌بارگذاری تا زمان رویداد "load" پنجره -->
+  <div class="site-loader" aria-hidden="true">
+    <div class="loader"><b>Mika</b><small>در حال ساخت تجربه</small></div>
+  </div>
+
+  <!-- مکان‌نمای سفارشی (فقط دسکتاپ، به main.js نگاه کنید) -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ============================== ناوبری ============================== -->
+  <nav class="nav">
+    <div class="nav-inner wrap">
+      <a class="brand" href="#">میکا</a>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#work">نمونه‌کارها</a></li>
+          <li><a href="#capabilities">توانمندی‌ها</a></li>
+          <li><a href="#process">فرآیند</a></li>
+          <li><a href="#contact">تماس</a></li>
+          <!-- در حالت موبایل، دکمه‌ی CTA داخل خودِ منوی کشویی هم تکرار می‌شود -->
+          <li class="mobile-only"><a class="nav-cta" href="#contact" style="display:inline-block;margin-top:10px">شروع پروژه</a></li>
+        </ul>
+        <a class="nav-cta desktop-only" href="#contact" id="navCta">شروع پروژه</a>
+
+        <!-- سوییچ پوسته‌ی روشن / تاریک -->
+        <button class="theme-toggle" id="themeToggle" aria-label="تغییر حالت روشن و تاریک">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.4A8.5 8.5 0 1 1 9.6 4 6.8 6.8 0 0 0 20 14.4Z"/></svg>
+        </button>
+
+        <!-- دکمه‌ی باز/بسته‌کردن منوی موبایل -->
+        <button class="menu-toggle" id="menuBtn" aria-label="منو">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================= هیرو ================================= -->
+  <header class="hero wrap">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span class="pulse"></span>آماده برای پروژه‌های منتخب · ۱۴۰۵–۱۴۰۶</p>
+      <h1>طراحی‌ای که انجامِ <em>درستِ کار</em> را ساده‌تر می‌کند.</h1>
+      <p>مسئله‌های پیچیده‌ی محصول را به تجربه‌ها، رابط‌ها و سیستم‌هایی تبدیل می‌کنم که هم برای کاربر قابل‌فهم باشند و هم تیم واقعاً بتواند آن‌ها را بسازد.</p>
+      <div class="meta">
+        <div><span>نقش —</span> طراح محصول</div>
+        <div><span>تمرکز —</span> محصول · سیستم طراحی · تبدیل</div>
+        <div><span>موقعیت —</span> هلسینکی / ریموت</div>
+      </div>
+    </div>
+
+    <!-- تصویرسازی تزئینی هیرو: حلقه‌ی مداری + کارت‌های چیده‌شده + نقل‌قول مشتری -->
+    <div class="hero-art reveal">
+      <div class="orbit"></div>
+      <div class="note a">منتخب پروژه‌ها / ۱۴۰۵–۰۶</div>
+      <div class="note b">۰۳ مطالعه‌ی موردی</div>
+      <div class="art-stack">
+        <div class="art-card art-back"><span class="mono">CS–02 · سیستم طراحی</span></div>
+        <div class="art-card art-main">
+          <div class="art-top"><span>MIKA / PORTFOLIO</span><span>۰۱ — ۰۳</span></div>
+          <div class="art-title">انجام کار<br><em>هدفمند</em></div>
+          <div class="art-foot"><span>محصول · دیجیتال</span><span style="color:var(--blue)">مشاهده پروژه ←</span></div>
+        </div>
+        <div class="quote">
+          <strong>★★★★★</strong>
+          <p>«ترکیبی کم‌یاب از ظرافت طراحی و درک کسب‌وکار»</p>
+          <small>مدیر محصول · Northfield</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================ نوار متحرک (تیکر) ============================ -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span><b>استراتژی</b> ← شفافیت قبل از پیکسل</span>
+      <span><b>سیستم‌ها</b> ← مقیاس‌پذیری بدون یکنواختی</span>
+      <span><b>محصول</b> ← نتیجه مهم‌تر از تزئین</span>
+      <span><b>تحقیق</b> ← شواهد به‌جای حدس</span>
+      <!-- مجموعه‌ی تکراری: برای اسکرول بی‌نهایت و بدون پرش (به @keyframes marquee نگاه کنید) -->
+      <span><b>استراتژی</b> ← شفافیت قبل از پیکسل</span>
+      <span><b>سیستم‌ها</b> ← مقیاس‌پذیری بدون یکنواختی</span>
+      <span><b>محصول</b> ← نتیجه مهم‌تر از تزئین</span>
+      <span><b>تحقیق</b> ← شواهد به‌جای حدس</span>
+    </div>
+  </div>
+
+  <!-- ============================= نمونه‌کارهای منتخب ============================= -->
+  <section class="section" id="work">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">نمونه‌کارهای منتخب</div>
+        <h2>سه پروژه؛ سه محدودیت کاملاً متفاوت.</h2>
+      </div>
+      <p class="section-note">یک پورتفولیوی حرفه‌ای فقط صفحه‌های زیبا نشان نمی‌دهد؛ منطق تصمیم، مسئله و تغییری که بعد از انتشار ایجاد شده را هم نشان می‌دهد.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <!-- کیس ۰۱ — ثبت‌نام فین‌تک -->
+      <article class="case reveal">
+        <div class="case-art">
+          <div class="mock">
+            <div class="mock-top"><span>FLOW / 01</span><span style="color:var(--green)">● منتشرشده</span></div>
+            <div class="mock-title"><span>ثبت‌نام</span><b>۴۱٪</b></div>
+            <div class="bars">
+              <i style="--h:42%"></i><i style="--h:58%"></i><i style="--h:51%"></i>
+              <i class="active" style="--h:84%"></i><i style="--h:67%"></i>
+            </div>
+            <div class="mock-foot"><span>ریزش</span><span style="color:var(--blue)">↓ ۴۱٪</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-id">CS–01 · فین‌تک · موبایل <span class="stat">۴۱٪ کاهش ریزش</span></div>
+          <h3>بازطراحی ورود به یک محصول وام‌دهی که کاربران در مرحله‌ی احراز هویت آن را ترک می‌کردند.</h3>
+          <p>یک فرم ۱۴ مرحله‌ای و فرسایشی به مسیری مرحله‌بندی‌شده با امکان ذخیره، نمایش پیشرفت و توضیح روشن برای هر تصمیم تبدیل شد.</p>
+          <div class="metrics">
+            <div class="metric"><b>۴۱٪</b><small>کاهش ریزش</small></div>
+            <div class="metric"><b>۲.۱×</b><small>سرعت تکمیل</small></div>
+            <div class="metric"><b>۶ هفته</b><small>تا انتشار</small></div>
+          </div>
+          <div class="tags"><span>تحقیق</span><span>طراحی جریان</span><span>UX Writing</span><span>A/B تست</span></div>
+        </div>
+      </article>
+
+      <!-- کیس ۰۲ — سیستم طراحی SaaS سازمانی -->
+      <article class="case reveal">
+        <div class="case-art">
+          <div class="browser">
+            <div class="browser-top"><i></i><i></i><i></i></div>
+            <div class="browser-body">
+              <div class="line s"></div>
+              <div class="cols"><div></div><div></div><div></div></div>
+              <div class="line l"></div>
+              <div class="line m"></div>
+            </div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-id">CS–02 · SaaS سازمانی · سیستم طراحی <span class="stat">۳ → ۱ سیستم</span></div>
+          <h3>یکپارچه‌کردن سه تیم محصول بدون متوقف‌کردن نقشه‌ی راه.</h3>
+          <p>سطوح محصول ممیزی شدند، توکن‌های مشترک شکل گرفتند و مهاجرت به‌صورت لایه‌ای انجام شد تا توسعه هم‌زمان ادامه پیدا کند.</p>
+          <div class="metrics">
+            <div class="metric"><b>۶۳٪</b><small>کاهش بدهی UI</small></div>
+            <div class="metric"><b>۹</b><small>تیم پذیرفته‌اند</small></div>
+            <div class="metric"><b>۰</b><small>توقف Roadmap</small></div>
+          </div>
+          <div class="tags"><span>سیستم طراحی</span><span>توکن‌ها</span><span>همکاری تیمی</span><span>مستندسازی</span></div>
+        </div>
+      </article>
+
+      <!-- کیس ۰۳ — رزرو نوبت سلامت -->
+      <article class="case reveal">
+        <div class="case-art">
+          <div class="palette">
+            <div class="sw"></div><div class="sw"></div><div class="sw"></div><div class="sw"></div>
+            <div class="sw"></div><div class="sw"></div><div class="sw"></div><div class="sw"></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-id">CS–03 · سلامت · موبایل <span class="stat">۴.۸★ پس از انتشار</span></div>
+          <h3>طراحی رزرو نوبت بر اساس اعتماد، نه فقط انجام سریع کار.</h3>
+          <p>تحقیق کاربر نشان داد مسئله اصلی اضطراب درباره‌ی تأیید رزرو و داده‌های شخصی است؛ بنابراین وضعیت‌های تأیید، مسیر انسانی و خلاصه‌ی قابل ذخیره اضافه شد.</p>
+          <div class="metrics">
+            <div class="metric"><b>۴.۸</b><small>امتیاز اپ</small></div>
+            <div class="metric"><b>۲۸٪−</b><small>تیکت پشتیبانی</small></div>
+            <div class="metric"><b>۱۲ هفته</b><small>تحقیق تا انتشار</small></div>
+          </div>
+          <div class="tags"><span>تحقیق میدانی</span><span>دسترس‌پذیری</span><span>اعتماد</span><span>پروتوتایپ</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================== توانمندی‌ها ============================== -->
+  <section class="section" id="capabilities">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">توانمندی‌ها</div>
+        <h2>از اولین سؤال تا آخرین مرحله‌ی تحویل، مفید و درگیر.</h2>
+      </div>
+      <p class="section-note">مجموعه‌ای متمرکز برای بنیان‌گذاران، تیم‌های محصول و استودیوهایی که به تفکر ارشد محصول نیاز دارند، نه تشریفات اضافه.</p>
+    </div>
+    <div class="capabilities">
+      <div class="cap reveal"><span class="cap-num">۰۱ / کشف</span><h3>استراتژی محصول</h3><p>تعریف مسئله، محدودیت‌ها، فرصت و معیار موفقیت پیش از ورود به اجرای بصری.</p></div>
+      <div class="cap reveal"><span class="cap-num">۰۲ / شکل‌دهی</span><h3>UX و تعامل</h3><p>تبدیل جریان‌های پیچیده به رابط‌هایی روشن، مقاوم و هدفمند در حالت‌های واقعی.</p></div>
+      <div class="cap reveal"><span class="cap-num">۰۳ / مقیاس</span><h3>سیستم طراحی</h3><p>ساخت توکن‌ها، اجزای قابل استفاده مجدد و مستنداتی که کیفیت را سریع‌تر می‌کنند.</p></div>
+      <div class="cap reveal"><span class="cap-num">۰۴ / اثبات</span><h3>پروتوتایپ و تست</h3><p>نمونه‌سازی با تراکم واقعی، آزمون فرضیات پرریسک و تصمیم‌گیری بر پایه شواهد.</p></div>
+      <div class="cap reveal"><span class="cap-num">۰۵ / انتشار</span><h3>طراحی + توسعه</h3><p>همکاری نزدیک با توسعه تا امکان‌پذیری بخشی از طراحی باشد، نه غافلگیری بعد از تحویل.</p></div>
+      <div class="cap reveal"><span class="cap-num">۰۶ / یادگیری</span><h3>پس از انتشار</h3><p>تعریف معیار، بررسی نتیجه و تبدیل داده‌های واقعی انتشار به تصمیم بعدی محصول.</p></div>
+    </div>
+  </section>
+
+  <!-- ================================ فرآیند ================================ -->
+  <section class="section" id="process">
+    <div class="process">
+      <div class="reveal">
+        <div class="kicker">فرآیند</div>
+        <h2>چهار ضرب؛ بدون نمایش اضافه.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="step-num">۰۱</span><div><h3>محدودیت را اول نام‌گذاری کن</h3><p>محدودیت‌های کسب‌وکار، فنی و انسانی قبل از اولین صفحه‌ی نهایی روشن می‌شوند.</p></div></div>
+        <div class="step reveal"><span class="step-num">۰۲</span><div><h3>کوچک‌ترین نسخه‌ی مفید را پیدا کن</h3><p>ساده‌ترین تعاملی را پیدا می‌کنیم که فرضیه‌ی پرریسک را ثابت یا رد کند.</p></div></div>
+        <div class="step reveal"><span class="step-num">۰۳</span><div><h3>توسعه را زود وارد کن</h3><p>امکان‌پذیری زمانی بررسی می‌شود که تغییر ایده هنوز ارزان است، نه بعد از تحویل نهایی.</p></div></div>
+        <div class="step reveal"><span class="step-num">۰۴</span><div><h3>چیزی را که منتشر شد اندازه بگیر</h3><p>معیار موفقیت از قبل مشخص می‌شود و نتیجه، مسیر تکرار بعدی را تعیین می‌کند.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== نقل‌قول برجسته =============================== -->
+  <section class="section">
+    <div class="quote-band reveal">
+      <blockquote>طراحی خوب بلندترین بخش محصول نیست؛ بخشی است که انجامِ درست‌ترین کار را طبیعی و بدیهی می‌کند.</blockquote>
+      <cite>— میکا / طراح محصول</cite>
+    </div>
+  </section>
+
+  <!-- =============================== تماس / فراخوان اقدام =============================== -->
+  <section class="section contact" id="contact">
+    <div class="contact-card reveal">
+      <div class="kicker" style="justify-content:center">پروژه‌ی بعدی</div>
+      <h2>یک مسئله‌ی سخت در محصول دارید؟</h2>
+      <p class="section-note" style="margin:0 auto 28px;text-align:center">بگویید چه چیزی گیر کرده، چه چیزی مهم است و موفقیت را چگونه تعریف می‌کنید. از همان‌جا شروع می‌کنیم.</p>
+      <div class="contact-actions">
+        <a class="primary" href="mailto:hello@mika.design">hello@mika.design</a>
+        <a href="#">لینکدین</a>
+        <a href="#">رزومه PDF</a>
+      </div>
+    </div>
+    <footer>
+      <span>© ۱۴۰۵ میکا</span>
+      <span>ساخته‌شده مثل یک محصول، نه یک بروشور.</span>
+    </footer>
+  </section>
+
+  <!-- اسکریپت‌های سایت -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

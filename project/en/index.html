@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mika — Premium Product Designer Portfolio</title>
+
+  <!-- Google Fonts: Fraunces (display), IBM Plex Mono (labels/UI), Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Site stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Preloader shown until window "load" fires -->
+  <div class="site-loader" aria-hidden="true">
+    <div class="loader"><b>Mika</b><small>Crafting the interface</small></div>
+  </div>
+
+  <!-- Custom cursor (desktop only, see main.js) -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ============================== NAVIGATION ============================== -->
+  <nav class="nav">
+    <div class="nav-inner wrap">
+      <a class="brand" href="#">Mika</a>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="nav-cta" href="#contact">Start a project</a>
+
+        <!-- Light / dark theme switch -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.4A8.5 8.5 0 1 1 9.6 4 6.8 6.8 0 0 0 20 14.4Z"/></svg>
+        </button>
+
+        <!-- Mobile navigation toggle -->
+        <button class="menu-toggle" id="menuBtn" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================= HERO ================================= -->
+  <header class="hero wrap">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span class="pulse"></span>Available for selected projects · 2027</p>
+      <h1>Design that makes the <em>right thing</em> easier to ship.</h1>
+      <p>I turn messy product problems into clear interfaces, systems and experiences that teams can actually build — and users can actually understand.</p>
+      <div class="meta">
+        <div><span>Role —</span> Product Designer</div>
+        <div><span>Focus —</span> 0→1 · Systems · Conversion</div>
+        <div><span>Based —</span> Helsinki / Remote</div>
+      </div>
+    </div>
+
+    <!-- Decorative hero artwork: orbit ring + stacked card mock + testimonial -->
+    <div class="hero-art reveal">
+      <div class="orbit"></div>
+      <div class="note a">Selected work / 2026–27</div>
+      <div class="note b">03 flagship cases</div>
+      <div class="art-stack">
+        <div class="art-card art-back"><span class="mono">CS–02 · Design systems</span></div>
+        <div class="art-card art-main">
+          <div class="art-top"><span>MIKA / PORTFOLIO</span><span>01 — 03</span></div>
+          <div class="art-title">Work<br><em>with intent.</em></div>
+          <div class="art-foot"><span>Product · Digital</span><span style="color:var(--blue)">View case →</span></div>
+        </div>
+        <div class="quote">
+          <strong>★★★★★</strong>
+          <p>"Rare mix of craft and business sense."</p>
+          <small>Head of Product · Northfield</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================ MARQUEE TICKER ============================ -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span><b>Strategy</b> → clarity before pixels</span>
+      <span><b>Systems</b> → scale without sameness</span>
+      <span><b>Product</b> → outcomes over decoration</span>
+      <span><b>Research</b> → evidence over assumptions</span>
+      <!-- Duplicate set: seamless infinite-loop marquee (see @keyframes marquee) -->
+      <span><b>Strategy</b> → clarity before pixels</span>
+      <span><b>Systems</b> → scale without sameness</span>
+      <span><b>Product</b> → outcomes over decoration</span>
+      <span><b>Research</b> → evidence over assumptions</span>
+    </div>
+  </div>
+
+  <!-- ============================= SELECTED WORK ============================= -->
+  <section class="section" id="work">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">Selected work</div>
+        <h2>Three projects. Three different constraints.</h2>
+      </div>
+      <p class="section-note">A premium portfolio should prove thinking, not just display polished screens. Each case shows the problem, the decision and the measurable shift.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <!-- Case 01 — Fintech onboarding -->
+      <article class="case reveal">
+        <div class="case-art">
+          <div class="mock">
+            <div class="mock-top"><span>FLOW / 01</span><span style="color:var(--green)">● shipped</span></div>
+            <div class="mock-title"><span>Onboarding</span><b>41%</b></div>
+            <div class="bars">
+              <i style="--h:42%"></i><i style="--h:58%"></i><i style="--h:51%"></i>
+              <i class="active" style="--h:84%"></i><i style="--h:67%"></i>
+            </div>
+            <div class="mock-foot"><span>drop-off</span><span style="color:var(--blue)">↓ 41%</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-id">CS–01 · Fintech · Mobile <span class="stat">−41% drop-off</span></div>
+          <h3>Rebuilding onboarding for a lending product that lost applicants at verification.</h3>
+          <p>A fragmented 14-field form became a paced, save-anywhere journey with clearer rationale, progress and recovery states.</p>
+          <div class="metrics">
+            <div class="metric"><b>41%</b><small>Fewer drop-offs</small></div>
+            <div class="metric"><b>2.1×</b><small>Completion speed</small></div>
+            <div class="metric"><b>6wk</b><small>Design to ship</small></div>
+          </div>
+          <div class="tags"><span>Research</span><span>Flow design</span><span>UX writing</span><span>A/B testing</span></div>
+        </div>
+      </article>
+
+      <!-- Case 02 — B2B SaaS design system -->
+      <article class="case reveal">
+        <div class="case-art">
+          <div class="browser">
+            <div class="browser-top"><i></i><i></i><i></i></div>
+            <div class="browser-body">
+              <div class="line s"></div>
+              <div class="cols"><div></div><div></div><div></div></div>
+              <div class="line l"></div>
+              <div class="line m"></div>
+            </div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-id">CS–02 · B2B SaaS · System <span class="stat">3 → 1 system</span></div>
+          <h3>Unifying three product teams without freezing the roadmap.</h3>
+          <p>I audited product surfaces, negotiated shared tokens and shipped migration in layers so engineering could keep moving while consistency improved.</p>
+          <div class="metrics">
+            <div class="metric"><b>63%</b><small>Less UI debt</small></div>
+            <div class="metric"><b>9</b><small>Squads adopted</small></div>
+            <div class="metric"><b>0</b><small>Roadmap freezes</small></div>
+          </div>
+          <div class="tags"><span>Design systems</span><span>Tokens</span><span>Cross-team</span><span>Documentation</span></div>
+        </div>
+      </article>
+
+      <!-- Case 03 — Healthcare booking flow -->
+      <article class="case reveal">
+        <div class="case-art">
+          <div class="palette">
+            <div class="sw"></div><div class="sw"></div><div class="sw"></div><div class="sw"></div>
+            <div class="sw"></div><div class="sw"></div><div class="sw"></div><div class="sw"></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-id">CS–03 · Healthcare · Mobile <span class="stat">4.8★ post-launch</span></div>
+          <h3>Designing booking around trust, not just task completion.</h3>
+          <p>Research surfaced anxiety around confirmation and data handling, so the flow gained explicit states, human fallback and a portable booking summary.</p>
+          <div class="metrics">
+            <div class="metric"><b>4.8</b><small>App rating</small></div>
+            <div class="metric"><b>−28%</b><small>Support tickets</small></div>
+            <div class="metric"><b>12wk</b><small>Research to launch</small></div>
+          </div>
+          <div class="tags"><span>Field research</span><span>Accessibility</span><span>Trust</span><span>Prototyping</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================== CAPABILITIES ============================== -->
+  <section class="section" id="capabilities">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">Capabilities</div>
+        <h2>Useful from first question to final handoff.</h2>
+      </div>
+      <p class="section-note">A focused set of capabilities for founders, product teams and studios that need senior-level product thinking without process theatre.</p>
+    </div>
+    <div class="capabilities">
+      <div class="cap reveal"><span class="cap-num">01 / DISCOVER</span><h3>Product strategy</h3><p>Frame the problem, identify constraints, map the opportunity and define what success should look like before execution.</p></div>
+      <div class="cap reveal"><span class="cap-num">02 / SHAPE</span><h3>UX & interaction</h3><p>Turn complex flows into interfaces that feel obvious, resilient and intentional across real states.</p></div>
+      <div class="cap reveal"><span class="cap-num">03 / SCALE</span><h3>Design systems</h3><p>Create reusable foundations, tokens and documentation that make quality faster instead of slower.</p></div>
+      <div class="cap reveal"><span class="cap-num">04 / PROVE</span><h3>Prototyping & testing</h3><p>Prototype at realistic density, test the riskiest assumptions and use evidence to decide what ships.</p></div>
+      <div class="cap reveal"><span class="cap-num">05 / SHIP</span><h3>Design + engineering</h3><p>Work close to implementation so feasibility is part of design, not a surprise after handoff.</p></div>
+      <div class="cap reveal"><span class="cap-num">06 / LEARN</span><h3>Post-launch thinking</h3><p>Define the metric, watch the outcome and turn launch data into the next product decision.</p></div>
+    </div>
+  </section>
+
+  <!-- ================================ PROCESS ================================ -->
+  <section class="section" id="process">
+    <div class="process">
+      <div class="reveal">
+        <div class="kicker">Process</div>
+        <h2>Four beats. No theatre.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="step-num">01</span><div><h3>Name the constraint</h3><p>Business, technical and human constraints get explicit before the first polished screen.</p></div></div>
+        <div class="step reveal"><span class="step-num">02</span><div><h3>Explore the smallest useful version</h3><p>Find the simplest interaction that can prove or disprove the risky assumption.</p></div></div>
+        <div class="step reveal"><span class="step-num">03</span><div><h3>Bring engineering in early</h3><p>Feasibility is discussed while ideas are cheap to change, not after a grand handoff.</p></div></div>
+        <div class="step reveal"><span class="step-num">04</span><div><h3>Measure what shipped</h3><p>Agree on the success signal in advance, then let the result shape the next iteration.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== PULL QUOTE =============================== -->
+  <section class="section">
+    <div class="quote-band reveal">
+      <blockquote>Good design is not the loudest part of the product. It is the part that makes the right action feel inevitable.</blockquote>
+      <cite>— Mika / Product Designer</cite>
+    </div>
+  </section>
+
+  <!-- =============================== CONTACT / CTA =============================== -->
+  <section class="section contact" id="contact">
+    <div class="contact-card reveal">
+      <div class="kicker" style="justify-content:center">Next project</div>
+      <h2>Have a hard product problem?</h2>
+      <p class="section-note" style="margin:0 auto 28px">Tell me what is stuck, what matters and what success looks like. We can start there.</p>
+      <div class="contact-actions">
+        <a class="primary" href="mailto:hello@mika.design">hello@mika.design</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Resume PDF</a>
+      </div>
+    </div>
+    <footer>
+      <span>© 2026 Mika</span>
+      <span>Built as a product, not a brochure.</span>
+    </footer>
+  </section>
+
+  <!-- Site scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
